@@ -22,7 +22,9 @@
 
 ## Steps to modify
 Add a component to spr\_vue/spr/src/components
+
 Add that component to spr\_vue/spr/src/App.vue
+
 Test locally using ```npm run serve```
 
 ## Steps to deploy
