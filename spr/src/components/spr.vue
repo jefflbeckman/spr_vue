@@ -19,15 +19,19 @@
                    @ready="playerReadied">
     </video-player>
     </div>
-    <div class="message">
-      <h1>{{ msg }}</h1>
+    <div class = "chat">
+      <chat/>
     </div>
   </div>
 </template>
 
 <script>
+import chat from './chat.vue'
 export default {
   name: 'spr',
+  components: {
+    chat
+  },
   props: {
     msg: String
   },
@@ -35,6 +39,8 @@ export default {
       return {
         playerOptions: {
           // videojs options
+          height: '576',
+          width: '1024',
           muted: true,
           language: 'en',
           playbackRates: [0.7, 1.0, 1.5, 2.0],
@@ -105,5 +111,11 @@ li {
 }
 a {
   color: #42b983;
+}
+</style>
+<style>
+.spr > * {
+    display: inline-block;
+    text-align: center;
 }
 </style>

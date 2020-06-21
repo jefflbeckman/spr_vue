@@ -1,14 +1,12 @@
 <template>
-  <div id="app">
+  <div id="app" class="arrange-horizontally" margin:auto>
     <spr msg="R.I.P. Napster" stream_name="test"/>
-    <chat />
-    <logo />
+    <logo /> 
   </div>
 </template>
 
 <script>
 import spr from './components/spr.vue'
-import chat from './components/chat.vue'
 import logo from './components/logo.vue'
 
 export default {
@@ -16,7 +14,6 @@ export default {
   components: {
     spr,
     logo,
-    chat
   }
 }
 </script>
