@@ -14,7 +14,7 @@
 3) Configure nginx
 ```
     cp spr_vue/nginx_confs/nginx.conf /etc/nginx/nginx.conf
-    cp spr_vue/nginx/spr /etc/nginx/sites-enabled/spr
+    cp spr_vue/nginx/sites-enabled/spr /etc/nginx/sites-enabled/spr
 ```
 
 ## Steps to modify
