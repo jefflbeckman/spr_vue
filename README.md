@@ -20,3 +20,21 @@
 ## Steps to modify
 Add a component to spr\_vue/spr/src/components
 Add that component to spr\_vue/spr/src/App.vue
+Test locally using ```npm run serve```
+
+## Steps to deploy
+Build using ```npm run build```. 
+Update the spr_vue/spr/dist directory in github using:
+```
+    git add spr/dist/*
+    git commit
+    git push
+```
+Deploy on the server by pulling from the github distribution:
+```
+    cd /var/spr_vue
+    git pull
+```
+
+
+On server, "git pull" the latest
