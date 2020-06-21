@@ -14,7 +14,10 @@
 3) Configure nginx
 ```
     cp spr_vue/nginx_confs/nginx.conf /etc/nginx/nginx.conf
-    cp spr_vue/nginx/sites-enabled/spr /etc/nginx/sites-enabled/spr
+    cp spr_vue/nginx/sites-available/spr /etc/nginx/sites-available/spr
+    cp spr_vue/nginx/sites-available/http_restream /etc/nginx/sites-available/http_restream
+    ln -s /etc/nginx/sites-available/spr /etc/nginx/sites-enabled/spr
+    ln -s /etc/nginx/sites-available/http_restream /etc/nginx/sites-enabled/http_restream
 ```
 
 ## Steps to modify
