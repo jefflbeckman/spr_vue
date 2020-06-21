@@ -1,18 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Stoned Pirates Radio" src="./assets/stoned_pirates_radio.jpg">
-    <HelloWorld msg="R.I.P. Napster" stream_name="test"/>
+    <spr msg="R.I.P. Napster" stream_name="test"/>
+    <chat />
+    <logo />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import spr from './components/spr.vue'
+import chat from './components/chat.vue'
+import logo from './components/logo.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    spr,
+    logo,
+    chat
   }
 }
 </script>

@@ -1,32 +1,33 @@
 <template>
-  <div class="player">
-    <h1>{{ msg }}</h1>
-    <video-player  class="video-player-box"
-                 ref="videoPlayer"
-                 :options="playerOptions"
-                 :playsinline="true"
-                 customEventName="customstatechangedeventname"
- 
-                 @play="onPlayerPlay($event)"
-                 @pause="onPlayerPause($event)"
-                 @ended="onPlayerEnded($event)"
-                 @waiting="onPlayerWaiting($event)"
-                 @playing="onPlayerPlaying($event)"
-                 @loadeddata="onPlayerLoadeddata($event)"
-                 @timeupdate="onPlayerTimeupdate($event)"
-                 @canplay="onPlayerCanplay($event)"
-                 @canplaythrough="onPlayerCanplaythrough($event)"
- 
-                 @statechanged="playerStateChanged($event)"
-                 @ready="playerReadied">
-  </video-player>
-
+  <div class="spr">
+    <div class="player">
+      <video-player  class="video-player-box"
+                   ref="videoPlayer"
+                   :options="playerOptions"
+                   :playsinline="true"
+                   customEventName="customstatechangedeventname" 
+                   @play="onPlayerPlay($event)"
+                   @pause="onPlayerPause($event)"
+                   @ended="onPlayerEnded($event)"
+                   @waiting="onPlayerWaiting($event)"
+                   @playing="onPlayerPlaying($event)"
+                   @loadeddata="onPlayerLoadeddata($event)"
+                   @timeupdate="onPlayerTimeupdate($event)"
+                   @canplay="onPlayerCanplay($event)"
+                   @canplaythrough="onPlayerCanplaythrough($event)"
+                   @statechanged="playerStateChanged($event)"
+                   @ready="playerReadied">
+    </video-player>
+    </div>
+    <div class="message">
+      <h1>{{ msg }}</h1>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'spr',
   props: {
     msg: String
   },
