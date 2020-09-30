@@ -46,6 +46,10 @@ export default {
           playbackRates: [0.7, 1.0, 1.5, 2.0],
           sources: [{
             type: "application/x-mpegURL",
+            src: "http://159.65.106.88:8080/hls/override.m3u8"
+          },
+          {
+            type: "application/x-mpegURL",
             src: "http://159.65.106.88:8080/hls/spr.m3u8"
           },
           {
